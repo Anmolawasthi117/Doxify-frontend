@@ -50,10 +50,10 @@ const FrontPageGenerator = () => {
 
   return (
     <div>
-    <div className="flex flex-col lg:flex-row space-y-8 lg:space-y-0 lg:space-x-8 p-8 bg-black  min-h-screen">
+    <div className="flex flex-col lg:flex-row space-y-8 lg:space-y-0 lg:space-x-8 p-8 bg-black  min-h-screen overflow-hidden">
       {/* <Boxes /> */}
       {/* Form Section */}
-      <div className="w-full lg:w-1/2 bg-transparent p-8 shadow-md rounded-lg border border-gray-200 z-10   ">
+      <div className="w-full lg:w-1/2 bg-transparent p-8 shadow-md rounded-lg border border-gray-200 z-10  overflow-hidden ">
         <h2 className="text-2xl font-semibold mb-6 text-neutral-200">
           Front Page Form
         </h2>
@@ -124,7 +124,7 @@ const FrontPageGenerator = () => {
 
       {/* Preview Section */}
       
-      <div className="w-full lg:w-1/2 bg-transparent p-8 shadow-md rounded-lg border border-gray-200 z-20">
+      <div className="w-full lg:w-1/2 bg-transparent p-8 shadow-md rounded-lg border border-gray-200 z-20 overflow-hidden">
       <FollowerPointerCard >
         <h2 className="text-2xl font-semibold mb-6 text-neutral-300">
         Preview
@@ -184,12 +184,12 @@ const FrontPageGenerator = () => {
         </FollowerPointerCard>
       </div>
         
-      <BackgroundBeams />
       
       
      
 
     </div>
+      <BackgroundBeams />
     <Footer />
 
     </div>

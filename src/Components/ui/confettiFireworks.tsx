@@ -5,7 +5,7 @@ import React from "react";
 
 export function ConfettiFireworks() {
   const handleClick = () => {
-    const duration = 5 * 1000;
+    const duration = 5 * 100;
     const animationEnd = Date.now() + duration;
     const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
 

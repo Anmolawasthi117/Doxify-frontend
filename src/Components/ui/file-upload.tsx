@@ -4,26 +4,26 @@ import { motion } from "framer-motion";
 import { IconUpload } from "@tabler/icons-react";
 import { useDropzone } from "react-dropzone";
 import {Input} from "./input"
-const mainVariant = {
-  initial: {
-    x: 0,
-    y: 0,
-  },
-  animate: {
-    x: 20,
-    y: -20,
-    opacity: 0.9,
-  },
-};
+// const mainVariant = {
+//   initial: {
+//     x: 0,
+//     y: 0,
+//   },
+//   animate: {
+//     x: 20,
+//     y: -20,
+//     opacity: 0.9,
+//   },
+// };
 
-const secondaryVariant = {
-  initial: {
-    opacity: 0,
-  },
-  animate: {
-    opacity: 1,
-  },
-};
+// const secondaryVariant = {
+//   initial: {
+//     opacity: 0,
+//   },
+//   animate: {
+//     opacity: 1,
+//   },
+// };
 
 export const FileUpload = ({
   onChange,
@@ -131,7 +131,7 @@ export const FileUpload = ({
             {!files.length && (
               <motion.div
                 layoutId="file-upload"
-                variants={mainVariant}
+                // variants={mainVariant}
                 transition={{
                   type: "spring",
                   stiffness: 300,
@@ -159,7 +159,7 @@ export const FileUpload = ({
 
             {!files.length && (
               <motion.div
-                variants={secondaryVariant}
+                // variants={secondaryVariant}
                 className="absolute opacity-0 border border-dashed border-sky-400 inset-0 z-30 bg-transparent flex items-center justify-center h-32 mt-4 w-full max-w-[8rem] mx-auto rounded-md"
               ></motion.div>
             )}
